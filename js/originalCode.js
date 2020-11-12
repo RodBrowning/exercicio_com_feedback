@@ -49,7 +49,7 @@ function submit() {
     desabilitarAlternativas(alternativas)
     esconderBotao(botao)
 
-    $.get('../data/exercicio.js', function(data) {
+    $.get('./data/exercicio.js', function(data) {
         let res = JSON.parse(data)
         res.map(innerArray=>{
             innerArray.map(gabaritoObject =>{

@@ -52,7 +52,7 @@ function submit() {
 
   desabilitarAlternativas(alternativas);
   esconderBotao(botao);
-  $.get('../data/exercicio.js', function (data) {
+  $.get('./data/exercicio.js', function (data) {
     var res = JSON.parse(data);
     res.map(function (innerArray) {
       innerArray.map(function (gabaritoObject) {
